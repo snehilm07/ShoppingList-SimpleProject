@@ -10,7 +10,7 @@ class ShoppingViewModelFactory(
 ): ViewModelProvider.NewInstanceFactory() {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return ShoppingViewModel(repository) as Tgit
+        return ShoppingViewModel(repository) as T
     }
 
 }

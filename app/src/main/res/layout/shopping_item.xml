@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="5dp"/>
+
+    <ImageView
+        android:id="@+id/tvDelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintStart_toStartOf="@id/glLeftVertical"
+        app:layout_constraintEnd_toEndOf="@id/glLeftVertical"
+        app:layout_constraintTop_toBottomOf="@id/glHorizontal"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/tvMinus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_minus"
+        app:layout_constraintEnd_toStartOf="@id/glRightVertical"
+        app:layout_constraintTop_toBottomOf="@id/glHorizontal"/>
+
+    <ImageView
+        android:id="@+id/tvPlus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintStart_toEndOf="@id/glRightVertical"
+        app:layout_constraintTop_toBottomOf="@id/glHorizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp"
+/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRightVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="38dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLeftVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="38dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
