@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace 'com.quickandroidapps.shoppinglist'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.quickandroidapps.shoppinglist"

@@ -6,7 +6,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.quickandroidapps.shoppinglist.data.db.entities.ShoppingItem
 
-@Database(entities = [ShoppingItem::class], version = 1)
+@Database(
+    entities = [ShoppingItem::class],
+    version = 1)
 abstract class ShoppingDatabase: RoomDatabase() {
 
     abstract fun getShoppingDao(): ShoppingDao
